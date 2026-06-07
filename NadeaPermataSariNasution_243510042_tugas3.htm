@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Mahasiswa TI UIR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">MyPortofolio</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#todo-app">Todo List</a></li>
+        </ul>
+        <button id="theme-toggle" class="btn-theme">🌙 Moon</button>
+    </nav>
+
+    <main class="container">
+        
+        <section id="hero" class="hero-section">
+            <img src="img/nadea.jpeg" alt="Foto Profil" class="profile-img">
+            <div class="hero-text">
+                <h2>Nadea Permata Sari Nasution</h2>
+                <p>Mahasiswa Teknik Informatika | Web Developer | Informatics Engineering Student at UIR</p>
+            </div>
+        </section>
+
+        <article id="about" class="about-section">
+            <h2>Tentang Saya</h2>
+            <p>Hai! Saya <b>Nadea Permata Sari Nasution</b>, mahasiswa Teknik
+                Informatika di Universitas Islam Riau. Saya memiliki minat di
+                bidang web development, database, dan jaringan komputer. Saya
+                senang mempelajari teknologi baru dan terus mengembangkan
+                kemampuan melalui berbagai tugas, praktikum, dan proyek
+                selama perkuliahan.
+            </p>
+        </article>
+
+        <section id="education" class="edu-section">
+            <h2>Riwayat Pendidikan</h2>
+            <table class="edu-table">
+                <thead>
+                    <tr>
+                        <th>Tahun</th>
+                        <th>Institusi</th>
+                        <th>Jurusan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024 - Sekarang</td>
+                        <td>Universitas Islam Riau</td>
+                        <td>Teknik Informatika</td>
+                    </tr>
+                    <tr>
+                        <td>2021 - 2024</td>
+                        <td>SMK Negeri 5 Pekanbaru</td>
+                        <td>Teknik Komputer dan Jaringan (TKJ)</td>
+                    </tr>
+                    <tr>
+                        <td>2018 - 2021</td>
+                        <td>SMP Negeri 6 Pekanbaru</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>2012 - 2018</td>
+                        <td>SD Negeri 107 Pekanbaru</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Hubungi Saya</h2>
+            <form action="" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap:</label>
+                    <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="contoh@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" rows="4" placeholder="Tulis pesan Anda di sini" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Kirim Pesan</button>
+            </form>
+        </section>
+
+        <section id="todo-app" class="todo-wrapper">
+            <h2>My Tasks</h2>
+            <div class="todo-input-group">
+                <input type="text" id="todo-input" placeholder="Add a new task...">
+                <button id="add-btn">Add</button>
+            </div>
+            <ul id="todo-list"></ul>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Nadea Permata Sari Nasution. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
